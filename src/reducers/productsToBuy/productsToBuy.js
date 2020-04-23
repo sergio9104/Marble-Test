@@ -8,7 +8,7 @@ export default function(state = [], action){
         case ADD_PRODUCT:
             return [...state.filter((product)  => product.id !== action.payload.id), action.payload]
         case REMOVE_PRODUCT:
-            return [...state.filter((product)  => product.id !== action.payload.id)]
+            return [...state.filter((product)  => product.id !== action.payload)]
         case CLEAN_PRODUCTS:
             return []
         default:
